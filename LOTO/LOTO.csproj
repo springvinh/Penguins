@@ -46,9 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Auth\AuthController.cs" />
+    <Compile Include="Controllers\Auth\SignInWithUsernameAndPassword.cs" />
+    <Compile Include="Controllers\Random\AddEmployee.cs" />
+    <Compile Include="Controllers\Random\AddSelectedEmployee.cs" />
+    <Compile Include="Controllers\Random\ExportToExcel.cs" />
+    <Compile Include="Controllers\Random\GetRandomEmployee.cs" />
+    <Compile Include="Controllers\Random\LoadEmployeeFromFile.cs" />
     <Compile Include="Controllers\Random\RandomController.cs" />
     <Compile Include="Models\SelectedEmployee.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>

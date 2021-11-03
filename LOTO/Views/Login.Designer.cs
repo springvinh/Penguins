@@ -43,7 +43,7 @@ namespace LOTO.Views
             this.label.Font = new System.Drawing.Font("Google Sans", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Location = new System.Drawing.Point(24, 72);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(137, 32);
+            this.label.Size = new System.Drawing.Size(131, 31);
             this.label.TabIndex = 0;
             this.label.Text = "Đăng nhập";
             // 
@@ -90,6 +90,7 @@ namespace LOTO.Views
             this.button1.TabIndex = 5;
             this.button1.Text = "ĐĂNG NHẬP";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login
             // 

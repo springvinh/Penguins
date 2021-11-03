@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LOTO.Controllers.Auth;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,22 @@ namespace LOTO.Views
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string username = textBoxUsername.Text;
+            string password = textBoxPassword.Text;
+
+            AuthController.SignInWithUsernameAndPassword(username, password);
+
+            if (AuthController.state == State.Auth)
+            {
+                this.Hide();
+                Main main = new Main();
+                main.ShowDialog();
+                this.Close();
+            }
         }
     }
 }
