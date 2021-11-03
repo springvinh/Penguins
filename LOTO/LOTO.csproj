@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controllers\Auth\AuthController.cs" />
     <Compile Include="Controllers\Auth\SignInWithUsernameAndPassword.cs" />
+    <Compile Include="Controllers\Auth\SignOut.cs" />
     <Compile Include="Controllers\Random\AddEmployee.cs" />
     <Compile Include="Controllers\Random\AddSelectedEmployee.cs" />
     <Compile Include="Controllers\Random\ExportToExcel.cs" />

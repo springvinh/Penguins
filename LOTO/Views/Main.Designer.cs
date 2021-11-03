@@ -48,6 +48,7 @@ namespace LOTO
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.labelEmployeeId = new System.Windows.Forms.Label();
             this.timerRandom = new System.Windows.Forms.Timer(this.components);
+            this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
@@ -63,7 +64,8 @@ namespace LOTO
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importToolStripMenuItem,
             this.randomToolStripMenuItem,
-            this.toolStripComboBoxPrizes});
+            this.toolStripComboBoxPrizes,
+            this.signOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(965, 31);
@@ -227,6 +229,13 @@ namespace LOTO
             // 
             this.timerRandom.Tick += new System.EventHandler(this.timerRandom_Tick);
             // 
+            // signOutToolStripMenuItem
+            // 
+            this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(86, 27);
+            this.signOutToolStripMenuItem.Text = "Đăng xuất";
+            this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +283,7 @@ namespace LOTO
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn departmentDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource employeeBindingSource;
+        private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
     }
 }
 

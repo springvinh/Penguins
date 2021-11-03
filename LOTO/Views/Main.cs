@@ -1,5 +1,7 @@
 ﻿using LOTO.Controllers;
+using LOTO.Controllers.Auth;
 using LOTO.Controllers.Random;
+using LOTO.Views;
 using System;
 using System.Threading;
 using System.Windows.Forms;
@@ -62,6 +64,19 @@ namespace LOTO
         private void timerRandom_Tick(object sender, EventArgs e)
         {
             labelEmployeeId.Text = random.Next(100000, 1000000).ToString();
+        }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AuthController.SignOut();
+
+            if(AuthController.state == State.Unauth)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+                this.Close();
+            }
         }
     }
 }
